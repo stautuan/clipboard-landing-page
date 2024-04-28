@@ -9,12 +9,18 @@
 
 :root {
   --clr-cyan: #26baa4;
+  --clr-hoverCyan: #40c3af;
   --clr-light-blue: #6173ff;
+  --clr-hoverBlue: #7181ff;
   --clr-grey: #4c545d;
   --clr-grey-light: #9fabb2;
   --clr-white: #fff;
   --headingFont: "Bai Jamjuree", sans-serif;
   --bodyFont: "Bai Jamjuree", sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --transition: 0.3s all ease-in;
 }
 
 html {
@@ -24,7 +30,7 @@ html {
 body {
   font-family: var(--headingFont);
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: var(--fw-400);
   line-height: 1.5;
   color: var(--clr-grey-light);
 }
@@ -34,7 +40,7 @@ h2,
 h3,
 h4 {
   color: var(--clr-grey);
-  font-weight: 600;
+  font-weight: var(--fw-600);
 }
 
 h1 {
@@ -83,22 +89,32 @@ a {
 }
 
 .btn {
+  cursor: pointer;
   width: 22.7rem;
   height: 5.6rem;
-  border-radius: 5rem;
   color: var(--clr-white);
-  font-weight: 500;
+  font-weight: var(--fw-500);
   letter-spacing: 0.5px;
+  border-radius: 5rem;
+  transition: var(--transition);
 }
 .btn-ios {
   background-color: var(--clr-cyan);
   margin-left: auto;
   margin-right: 0.8rem;
+  box-shadow: 0 4px 0px rgba(27, 130, 115, 0.8);
+}
+.btn-ios:hover {
+  background-color: var(--clr-hoverCyan);
 }
 .btn-mac {
   background-color: var(--clr-light-blue);
   margin-right: auto;
   margin-left: 0.8rem;
+  box-shadow: 0 4px 0px rgba(58, 69, 153, 0.8);
+}
+.btn-mac:hover {
+  background-color: var(--clr-hoverBlue);
 }
 
 .img {
@@ -129,15 +145,14 @@ h2,
 }
 
 .hero-section {
-  padding-top: 13rem;
   background-image: url(../images/bg-header-desktop.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  padding: 13rem 0 14.7rem;
 }
 .hero-subtitle {
   font-size: 2rem;
-  line-height: 1.5;
   margin-bottom: 4.8rem;
 }
 
@@ -155,7 +170,7 @@ h1 {
 /**      SNIPPETS       **/
 /*************************/
 .snippets-section {
-  padding-top: 14.7rem;
+  margin-bottom: 14.7rem;
 }
 .snippets-subtitle {
   line-height: 1.6;
@@ -183,7 +198,7 @@ h1 {
 /**       ACCESS        **/
 /*************************/
 .access-section {
-  padding-top: 14.7rem;
+  margin-bottom: 6.9rem;
 }
 .access-subtitle {
   line-height: 1.65;
@@ -193,9 +208,6 @@ h1 {
 /*************************/
 /**     SUPERCHARGE     **/
 /*************************/
-.supercharge-section {
-  padding-top: 6.9rem;
-}
 .supercharge-section .container {
   -moz-column-gap: 4rem;
        column-gap: 4rem;
