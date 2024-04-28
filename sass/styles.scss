@@ -176,8 +176,7 @@ h2,
 }
 
 h1 {
-  margin-top: 5.5rem;
-  margin-bottom: 1.2rem;
+  margin: 5.5rem 0 1.2rem;
 }
 
 /*************************/
@@ -325,6 +324,19 @@ article {
     padding-right: clamp(2.4rem, 0.4282rem + 5.2582vw, 8rem);
   }
 
+  .subtitle {
+    max-width: 100%;
+  }
+
+  .btn {
+    &-ios,
+    &-mac {
+      display: grid;
+      grid-column: 1 / -1;
+      margin: 1.5rem 0;
+    }
+  }
+
   .supercharge {
     &-section {
       .container {
@@ -340,28 +352,17 @@ article {
 
   .logos {
     &-container {
-      flex-direction: column;
-      gap: 8rem;
+      flex-wrap: wrap;
+      gap: 6rem;
     }
   }
 }
 
-@media screen and (max-width: 768px) {
-  .btn {
-    &-ios,
-    &-mac {
-      display: grid;
-      grid-column: 1 / -1;
-      margin: 1.5rem 0;
-    }
-  }
-}
+// @media screen and (max-width: 768px) {
+
+// }
 
 @media screen and (max-width: 600px) {
-  .subtitle {
-    max-width: 100%;
-  }
-
   .btn {
     &-ios,
     &-mac {
@@ -385,6 +386,12 @@ article {
   .hero {
     &-section {
       background-image: url(../images/bg-header-mobile.png);
+    }
+  }
+
+  .logos {
+    &-container {
+      flex-direction: column;
     }
   }
 }
