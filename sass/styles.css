@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  --clr-cyan: #26baa4;
+  --clr-hover-cyan: #40c3af;
+  --clr-light-blue: #6173ff;
+  --clr-hover-blue: #7181ff;
+  --clr-grey: #4c545d;
+  --clr-grey-light: #9fabb2;
+  --clr-white: #fff;
+  --body-font: "Bai Jamjuree", sans-serif;
+  --body-font-size: 1.8rem;
+  --body-line-height: 1.5;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --transition: 0.3s all ease-in;
+}
+
 *,
 ::after,
 ::before {
@@ -7,31 +24,15 @@
   box-sizing: border-box;
 }
 
-:root {
-  --clr-cyan: #26baa4;
-  --clr-hoverCyan: #40c3af;
-  --clr-light-blue: #6173ff;
-  --clr-hoverBlue: #7181ff;
-  --clr-grey: #4c545d;
-  --clr-grey-light: #9fabb2;
-  --clr-white: #fff;
-  --headingFont: "Bai Jamjuree", sans-serif;
-  --bodyFont: "Bai Jamjuree", sans-serif;
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-600: 600;
-  --transition: 0.3s all ease-in;
-}
-
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: var(--headingFont);
-  font-size: 1.8rem;
-  font-weight: var(--fw-400);
-  line-height: 1.5;
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--fw-regular);
+  line-height: var(--body-line-height);
   color: var(--clr-grey-light);
 }
 
@@ -40,20 +41,20 @@ h2,
 h3,
 h4 {
   color: var(--clr-grey);
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-semibold);
 }
 
 h1 {
-  font-size: 4.4rem;
+  font-size: clamp(3.8rem, 3.5887rem + 0.5634vw, 4.4rem);
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: clamp(3rem, 2.8239rem + 0.4695vw, 3.5rem);
   margin-bottom: 1.6rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 1.5535rem + 0.6573vw, 2.5rem);
 }
 
 a {
@@ -92,7 +93,7 @@ a {
   width: 22.7rem;
   height: 5.2rem;
   color: var(--clr-white);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-medium);
   letter-spacing: 0.5px;
   border-radius: 5rem;
   transition: var(--transition);
@@ -104,7 +105,7 @@ a {
   box-shadow: 0 4px 0px rgba(27, 130, 115, 0.7), 0 20px 20px rgba(38, 186, 164, 0.2);
 }
 .btn-ios:hover {
-  background-color: var(--clr-hoverCyan);
+  background-color: var(--clr-hover-cyan);
 }
 .btn-mac {
   background-color: var(--clr-light-blue);
@@ -113,7 +114,7 @@ a {
   box-shadow: 0 4px 0px rgba(58, 69, 153, 0.8), 0 20px 20px rgba(97, 115, 255, 0.2);
 }
 .btn-mac:hover {
-  background-color: var(--clr-hoverBlue);
+  background-color: var(--clr-hover-blue);
 }
 
 .img {
@@ -127,7 +128,7 @@ a {
   max-width: 60%;
 }
 
-.center-v {
+.text-center {
   text-align: center;
 }
 
@@ -207,7 +208,7 @@ h1 {
 /*************************/
 /**     SUPERCHARGE     **/
 /*************************/
-.supercharge-section .container {
+.supercharge-section .grid {
   -moz-column-gap: 4rem;
        column-gap: 4rem;
   align-items: start;
@@ -236,7 +237,7 @@ article p {
 .logos-section {
   padding: 15.9rem 0 15.5rem;
 }
-.logos-container {
+.logos-container.flex {
   justify-content: space-between;
 }
 
@@ -259,4 +260,25 @@ article p {
 }
 .attribution a {
   color: #3e52a3;
+}
+
+/*************************/
+/**       QUERIES       **/
+/*************************/
+@media screen and (max-width: 1120px) {
+  .snippets-features {
+    flex-direction: column;
+    gap: 10rem;
+  }
+  .snippets-img {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 907px) {
+  .supercharge-section .container article {
+    display: grid;
+    justify-items: center;
+    grid-column: 1/-1;
+    max-width: clamp(30rem, 22.9577rem + 18.7793vw, 50rem);
+  }
 }/*# sourceMappingURL=styles.css.map */
