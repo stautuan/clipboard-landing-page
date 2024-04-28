@@ -102,7 +102,7 @@ a {
   background-color: var(--clr-cyan);
   margin-left: auto;
   margin-right: 0.8rem;
-  box-shadow: 0 4px 0px rgba(27, 130, 115, 0.8);
+  box-shadow: 0 4px 0px rgba(27, 130, 115, 0.7), 0 20px 20px rgba(38, 186, 164, 0.2);
 }
 .btn-ios:hover {
   background-color: var(--clr-hoverCyan);
@@ -111,7 +111,7 @@ a {
   background-color: var(--clr-light-blue);
   margin-right: auto;
   margin-left: 0.8rem;
-  box-shadow: 0 4px 0px rgba(58, 69, 153, 0.8);
+  box-shadow: 0 4px 0px rgba(58, 69, 153, 0.8), 0 20px 20px rgba(97, 115, 255, 0.2);
 }
 .btn-mac:hover {
   background-color: var(--clr-hoverBlue);
