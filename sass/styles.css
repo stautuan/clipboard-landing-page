@@ -8,7 +8,7 @@
   --clr-grey-light: #9fabb2;
   --clr-white: #fff;
   --body-font: "Bai Jamjuree", sans-serif;
-  --body-font-size: 1.8rem;
+  --body-font-size: clamp(1.6rem, 1.5296rem + 0.1878vw, 1.8rem);
   --body-line-height: 1.5;
   --fw-regular: 400;
   --fw-medium: 500;
@@ -45,16 +45,16 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(3.8rem, 3.5887rem + 0.5634vw, 4.4rem);
+  font-size: clamp(3.2rem, 2.7775rem + 1.1268vw, 4.4rem);
 }
 
 h2 {
-  font-size: clamp(3rem, 2.8239rem + 0.4695vw, 3.5rem);
+  font-size: clamp(2.8rem, 2.5535rem + 0.6573vw, 3.5rem);
   margin-bottom: 1.6rem;
 }
 
 h3 {
-  font-size: clamp(1.8rem, 1.5535rem + 0.6573vw, 2.5rem);
+  font-size: 2.5rem;
 }
 
 a {
@@ -152,7 +152,7 @@ h2,
   padding: 12.7rem 0 15.1rem;
 }
 .hero-subtitle {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 1.4592rem + 0.3756vw, 2rem);
   margin-bottom: 4.8rem;
 }
 
@@ -174,7 +174,7 @@ h1 {
 }
 .snippets-subtitle {
   line-height: 1.6;
-  margin-bottom: 8.2rem;
+  margin-bottom: clamp(6rem, 5.2254rem + 2.0657vw, 8.2rem);
 }
 .snippets-img {
   margin-left: -20rem;
@@ -202,7 +202,7 @@ h1 {
 }
 .access-subtitle {
   line-height: 1.65;
-  margin-bottom: 10rem;
+  margin-bottom: clamp(5rem, 3.2394rem + 4.6948vw, 10rem);
 }
 
 /*************************/
@@ -248,7 +248,7 @@ article p {
   padding-bottom: 15rem;
 }
 .download-subtitle {
-  margin-bottom: 5.2rem;
+  margin-bottom: clamp(4rem, 3.5775rem + 1.1268vw, 5.2rem);
 }
 
 .attribution {
@@ -275,10 +275,40 @@ article p {
   }
 }
 @media screen and (max-width: 907px) {
+  .container {
+    padding-left: clamp(2rem, -0.1127rem + 5.6338vw, 8rem);
+    padding-right: clamp(2rem, -0.1127rem + 5.6338vw, 8rem);
+  }
   .supercharge-section .container article {
     display: grid;
     justify-items: center;
     grid-column: 1/-1;
     max-width: clamp(30rem, 22.9577rem + 18.7793vw, 50rem);
+  }
+  .logos-container {
+    flex-direction: column;
+    gap: 8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn-ios, .btn-mac {
+    display: grid;
+    grid-column: 1/-1;
+    margin: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subtitle {
+    max-width: 100%;
+  }
+  .hero-subtitle {
+    margin-bottom: 3.5rem;
+  }
+  .btn-ios, .btn-mac {
+    width: 100%;
+  }
+  .snippets-list {
+    padding: 0;
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
