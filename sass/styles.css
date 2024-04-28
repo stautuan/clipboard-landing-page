@@ -123,7 +123,7 @@ h1,
 h2,
 .logo,
 .subtitle,
-.snippets-desktop,
+.snippets-features,
 .access-img {
   grid-column: 1/-1;
 }
@@ -164,17 +164,17 @@ h1 {
 .snippets-img {
   margin-left: -20rem;
 }
-.snippets-features {
+.snippets-list {
   padding: 0 10rem;
   text-align: left;
 }
-.snippets-features__title {
+.snippets-list__title {
   margin-bottom: 0.2rem;
 }
-.snippets-features div:not(:last-child) {
+.snippets-list div:not(:last-child) {
   margin-bottom: 6rem;
 }
-.snippets-features p {
+.snippets-list p {
   font-size: 1.6rem;
   line-height: 2;
 }

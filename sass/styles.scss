@@ -130,7 +130,7 @@ h1,
 h2,
 .logo,
 .subtitle,
-.snippets-desktop,
+.snippets-features,
 .access-img {
   grid-column: 1 / -1;
 }
@@ -179,20 +179,20 @@ h1 {
     margin-left: -20rem;
   }
 
-  &-features {
+  &-list {
     padding: 0 10rem;
     text-align: left;
   }
 
-  &-features__title {
+  &-list__title {
     margin-bottom: 0.2rem;
   }
 
-  &-features div:not(:last-child) {
+  &-list div:not(:last-child) {
     margin-bottom: 6rem;
   }
 
-  &-features p {
+  &-list p {
     font-size: 1.6rem;
     line-height: 2;
   }
