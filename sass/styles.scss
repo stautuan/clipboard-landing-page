@@ -166,7 +166,7 @@ h2,
 
   &-subtitle {
     font-size: clamp(1.6rem, 1.4592rem + 0.3756vw, 2rem);
-    margin-bottom: 4.8rem;
+    margin-bottom: clamp(3.5rem, 3.0423rem + 1.2207vw, 4.8rem);
   }
 }
 
@@ -321,8 +321,8 @@ article {
 
 @media screen and (max-width: 907px) {
   .container {
-    padding-left: clamp(2rem, -0.1127rem + 5.6338vw, 8rem);
-    padding-right: clamp(2rem, -0.1127rem + 5.6338vw, 8rem);
+    padding-left: clamp(2.4rem, 0.4282rem + 5.2582vw, 8rem);
+    padding-right: clamp(2.4rem, 0.4282rem + 5.2582vw, 8rem);
   }
 
   .supercharge {
@@ -362,10 +362,6 @@ article {
     max-width: 100%;
   }
 
-  .hero-subtitle {
-    margin-bottom: 3.5rem;
-  }
-
   .btn {
     &-ios,
     &-mac {
@@ -373,8 +369,22 @@ article {
     }
   }
 
-  .snippets-list {
-    padding: 0;
-    text-align: center;
+  .snippets {
+    &-features {
+      gap: 6rem;
+    }
+
+    &-list {
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero {
+    &-section {
+      background-image: url(../images/bg-header-mobile.png);
+    }
   }
 }

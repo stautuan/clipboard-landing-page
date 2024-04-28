@@ -153,7 +153,7 @@ h2,
 }
 .hero-subtitle {
   font-size: clamp(1.6rem, 1.4592rem + 0.3756vw, 2rem);
-  margin-bottom: 4.8rem;
+  margin-bottom: clamp(3.5rem, 3.0423rem + 1.2207vw, 4.8rem);
 }
 
 .logo {
@@ -276,8 +276,8 @@ article p {
 }
 @media screen and (max-width: 907px) {
   .container {
-    padding-left: clamp(2rem, -0.1127rem + 5.6338vw, 8rem);
-    padding-right: clamp(2rem, -0.1127rem + 5.6338vw, 8rem);
+    padding-left: clamp(2.4rem, 0.4282rem + 5.2582vw, 8rem);
+    padding-right: clamp(2.4rem, 0.4282rem + 5.2582vw, 8rem);
   }
   .supercharge-section .container article {
     display: grid;
@@ -301,14 +301,19 @@ article p {
   .subtitle {
     max-width: 100%;
   }
-  .hero-subtitle {
-    margin-bottom: 3.5rem;
-  }
   .btn-ios, .btn-mac {
     width: 100%;
+  }
+  .snippets-features {
+    gap: 6rem;
   }
   .snippets-list {
     padding: 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-section {
+    background-image: url(../images/bg-header-mobile.png);
   }
 }/*# sourceMappingURL=styles.css.map */
