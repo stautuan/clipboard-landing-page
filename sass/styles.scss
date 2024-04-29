@@ -63,6 +63,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 /*************************/
 /** REUSABLE COMPONENTS **/
 /*************************/
@@ -289,6 +293,42 @@ article {
   }
 }
 
+.footer {
+  background-color: #e9ecef;
+
+  .container {
+    padding: 4.4rem 0;
+  }
+}
+
+.nav-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+
+.nav-footer__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 1rem;
+}
+
+.nav-item a {
+  color: var(--clr-grey);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
 .attribution {
   position: fixed;
   bottom: 0;
@@ -357,10 +397,6 @@ article {
     }
   }
 }
-
-// @media screen and (max-width: 768px) {
-
-// }
 
 @media screen and (max-width: 600px) {
   .btn {
