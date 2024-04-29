@@ -12,6 +12,7 @@ Users should be able to:
 ### Screenshot
 
 ![desktop](./images/my-solution.png)
+![mobile](./images/my-solution-m.png)
 
 ### Links
 
