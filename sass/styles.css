@@ -209,6 +209,9 @@ h1 {
   line-height: 1.65;
   margin-bottom: clamp(5rem, 3.2394rem + 4.6948vw, 10rem);
 }
+.access-img {
+  width: 80%;
+}
 
 /*************************/
 /**     SUPERCHARGE     **/
