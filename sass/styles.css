@@ -340,6 +340,20 @@ article p {
     flex-wrap: wrap;
     gap: 6rem;
   }
+  .nav-footer__list {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-footer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .nav-footer__list {
+    display: block;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .btn-ios, .btn-mac {

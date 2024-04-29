@@ -414,6 +414,28 @@ article {
       gap: 6rem;
     }
   }
+
+  .nav {
+    &-footer {
+      &__list {
+        column-gap: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    &-footer {
+      flex-direction: column;
+      gap: 3rem;
+
+      &__list {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
