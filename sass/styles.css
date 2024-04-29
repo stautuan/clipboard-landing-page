@@ -319,6 +319,9 @@ article p {
   .snippets-img {
     margin-left: 0;
   }
+  .snippets-list {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 907px) {
   .container {
@@ -367,7 +370,6 @@ article p {
   }
   .snippets-list {
     padding: 0;
-    text-align: center;
   }
 }
 @media screen and (max-width: 375px) {
