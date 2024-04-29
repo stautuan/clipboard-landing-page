@@ -4,8 +4,10 @@
   --clr-hover-cyan: #40c3af;
   --clr-light-blue: #6173ff;
   --clr-hover-blue: #7181ff;
-  --clr-grey: #4c545d;
-  --clr-grey-light: #9fabb2;
+  --clr-grey-1: #e9ecef;
+  --clr-grey-2: #9fabb2;
+  --clr-grey-3: #868e96;
+  --clr-grey-4: #4c545d;
   --clr-white: #fff;
   --body-font: "Bai Jamjuree", sans-serif;
   --body-font-size: clamp(1.6rem, 1.5296rem + 0.1878vw, 1.8rem);
@@ -33,14 +35,14 @@ body {
   font-size: var(--body-font-size);
   font-weight: var(--fw-regular);
   line-height: var(--body-line-height);
-  color: var(--clr-grey-light);
+  color: var(--clr-grey-2);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: var(--clr-grey);
+  color: var(--clr-grey-4);
   font-weight: var(--fw-semibold);
 }
 
@@ -258,7 +260,7 @@ article p {
 /**        FOOTER       **/
 /*************************/
 .footer {
-  background-color: #e9ecef;
+  background-color: var(--clr-grey-1);
   padding: 4.4rem 0;
 }
 
@@ -277,13 +279,19 @@ article p {
 }
 .nav-footer__item a {
   font-weight: var(--fw-medium);
-  color: #868e96;
+  color: var(--clr-grey-3);
 }
 .nav-footer__item a:hover {
   color: var(--clr-cyan);
 }
 .nav-social-links {
   gap: 3rem;
+}
+.nav-social-link a img {
+  transition: var(--transition);
+}
+.nav-social-link a img:hover {
+  filter: brightness(0) saturate(100%) invert(52%) sepia(89%) saturate(340%) hue-rotate(121deg) brightness(97%) contrast(95%);
 }
 
 .attribution {
