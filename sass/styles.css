@@ -254,38 +254,35 @@ article p {
   margin-bottom: clamp(4rem, 3.5775rem + 1.1268vw, 5.2rem);
 }
 
+/*************************/
+/**        FOOTER       **/
+/*************************/
 .footer {
   background-color: #e9ecef;
-}
-.footer .container {
   padding: 4.4rem 0;
 }
 
 .nav-footer {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .nav-footer .logo {
   width: 5.5rem;
   height: 5.5rem;
 }
-
 .nav-footer__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
   -moz-column-gap: 4rem;
        column-gap: 4rem;
   row-gap: 1rem;
 }
-
-.nav-item a {
-  color: var(--clr-grey);
+.nav-footer__item a {
+  font-weight: var(--fw-medium);
+  color: #868e96;
 }
-
-.social-links {
-  display: flex;
-  align-items: center;
+.nav-footer__item a:hover {
+  color: var(--clr-cyan);
+}
+.nav-social-links {
   gap: 3rem;
 }
 
